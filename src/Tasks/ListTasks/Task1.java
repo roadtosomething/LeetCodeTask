@@ -3,19 +3,12 @@ package Tasks.ListTasks;
 import Tasks.Task;
 
 public class Task1 implements Task {
-    String taskName = "1. Two Sum";
-    private int[] nums;
-    private int target;
-
-    public Task1(int[] nums, int target){
-        this.nums= nums;
-        this.target=target;
-    }
+    private int[] nums = new int[]{3,4,2};
+    private int target = 6 ;
 
     @Override
     public void run() {
-        System.out.println("Задание: "+ taskName +"\n" +
-                "Результат тестов: "+ showArray(twoSum()));
+        System.out.println(showArray(twoSum()));
     }
     private String showArray(int[] array){
         StringBuilder stringBuilder = new StringBuilder();

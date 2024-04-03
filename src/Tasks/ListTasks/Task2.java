@@ -1,14 +1,21 @@
 package Tasks.ListTasks;
 import Tasks.classes.*;
 import Tasks.Task;
+import Tasks.classes.ListNode;
 
 import java.util.List;
 
 
 public class Task2 implements Task {
 
-    private ListNode l1;
-    private ListNode l2;
+    private ListNode l1 =
+                new ListNode (2,
+                        new ListNode( 4,
+                                new ListNode(9)));
+    private ListNode l2= new ListNode(5,
+            new ListNode(6,
+                    new ListNode(4,
+                            new ListNode(9))));
 
     public Task2(ListNode l1, ListNode l2){
         this.l1 = l1;
